@@ -1,4 +1,4 @@
-# 使用vue-cli构建的网易云项目
+# 使用vue-cli构建的网易云音乐项目
 
 
 # git clone https://gitee.com/ljwzuishuai/vue-music.git
