@@ -1,12 +1,23 @@
+//入口文件
 import Vue from 'vue'
-import App from './App.vue'
+
+import app from './App.vue'
+
 import router from './router'
-import store from './store'
+
+import Mint from 'mint-ui';
+import 'mint-ui/lib/style.css';
+import './static/my-muinit.css'
+//导入MUI的样式
+import './static/mui/css/mui.min.css'
+import mui from './static/mui/js/mui.js'
+Vue.prototype.mui = mui
+Vue.use(Mint);
+
 
 Vue.config.productionTip = false
 
 new Vue({
   router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+  render:h =>h(app)
+}).$mount("#app")
