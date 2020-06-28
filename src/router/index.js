@@ -1,31 +1,45 @@
 import VueRouter from 'vue-router'
 
-import HotComments from '../components/tabbar/HotComments.vue'
+import HotComments from '@/components/tabbar/HotComments'
 
-import My from '../components/tabbar/My.vue'
+import My from '@/components/tabbar/My'
 
-import rec from '../components/tabbar/Recommendsonglist.vue'
+import rec from '@/components/tabbar/Recommendsonglist'
 
-import search from '../components/tabbar/Search.vue'
+import search from '@/components/tabbar/Search'
+
+
+
+const routes= [
+    {
+        path: '/',
+        component:rec
+    },
+    {
+        path: '/rec',
+        component: rec,
+        name:"rec"
+    },
+    {
+        path: '/search',
+        component: search,
+        name:"search"
+    },
+    {
+        path: '/hotcomments',
+        component:HotComments,
+        name:"HotComments"
+    },
+    {
+        path: '/my',
+        component:My,
+        name:"My"
+    }
+]
 
 const router = new VueRouter({
-    routes: [{
-            path: '/rec',
-            component: rec
-        },
-        {
-            path: '/serch',
-            component: search
-        },
-        {
-            path: '/hotcomments',
-            component: HotComments
-        },
-        {
-            path: '/my',
-            component: My
-        }
-    ],
+    mode:'history',
+    routes,
     linkActiveClass: "mui-active"
 })
 
