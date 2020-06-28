@@ -17,9 +17,7 @@
     white-space: nowrap;
 }
 
-* {
-    touch-action: none;
-}
+ .mui-bar-tab {touch-action: none}
 
 .mint-swipe {
     height: 160px;

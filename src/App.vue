@@ -7,7 +7,7 @@
     <nav class="mui-bar mui-bar-tab " >
       <a class="mui-tab-item mui-active" @click="rec">
         <span class="mui-icon mui-icon-home"></span>
-        <span class="mui-tab-label" >推荐歌单</span>
+        <span class="mui-tab-label" >首页</span>
       </a>
       <a class="mui-tab-item" @click="search">
         <span class="mui-icon mui-icon-search"></span>

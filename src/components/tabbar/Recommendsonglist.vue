@@ -55,6 +55,11 @@ export default {
 
 
 <style>
+#rec{
+    
+    height: auto;
+    width: auto;
+}
 .banners {
   width: 100%;
   height: 100%;
@@ -85,7 +90,6 @@ export default {
   color: #000;
   line-height: 2;
   text-align: center;
-
   word-break: break-all;
 }
 .grid > div > div {
@@ -94,8 +98,8 @@ export default {
   font-size: 13px;
 }
 .grid > div > div > img {
-  width: 120px;
-  height: 120px;
+ 
+  height: 100px;
   border-radius: 15%;
 }
 
