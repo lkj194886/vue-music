@@ -1,7 +1,9 @@
 <template>
   <div id="app" class="app-header">
     <mt-header class="header" fixed title="Vue网易云音乐"></mt-header>
+	<transition>
     <router-view></router-view>
+	</transition>
     <nav class="mui-bar mui-bar-tab " >
       <a class="mui-tab-item mui-active" @click="rec">
         <span class="mui-icon mui-icon-home"></span>
@@ -50,5 +52,17 @@ export default {
 <style>
 .app-header {
   padding-top: 40px;
+  padding-bottom: 120px;
 }
+.v-enter,
+.v-leave-to{
+	opacity: 0;
+	transform: translateX(100%);
+	position: absolute;
+}
+.v-enter-active,
+.v-leave-active{
+	transition: all 0.5s;
+}
+
 </style>
