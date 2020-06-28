@@ -2,8 +2,12 @@
 import Vue from 'vue'
 
 import app from './App.vue'
+import VueRouter from 'vue-router'
+import router from './router/index.js'
 
-import router from './router'
+Vue.use(VueRouter)
+
+
 
 import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css';
@@ -19,5 +23,5 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
-  render:h =>h(app)
+  render: h => h(app)
 }).$mount("#app")

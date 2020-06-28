@@ -16,3 +16,4 @@
     text-align: center;
     white-space: nowrap;
 }
+* { touch-action: none; }
