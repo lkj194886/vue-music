@@ -2,10 +2,10 @@
   <div id="app" class="app-header">
     <mt-header class="header" fixed title="Vue网易云音乐"></mt-header>
     <router-view></router-view>
-    <nav class="mui-bar mui-bar-tab">
-      <a class="mui-tab-item" @click="rec">
+    <nav class="mui-bar mui-bar-tab " >
+      <a class="mui-tab-item mui-active" @click="rec">
         <span class="mui-icon mui-icon-home"></span>
-        <span class="mui-tab-label">推荐歌单</span>
+        <span class="mui-tab-label" >推荐歌单</span>
       </a>
       <a class="mui-tab-item" @click="search">
         <span class="mui-icon mui-icon-search"></span>
@@ -27,21 +27,23 @@
 export default {
   name: "app",
   data() {
-    return {};
+    return {
+		
+	};
   },
   methods: {
     rec() {
-      this.$router.push({ path: "rec" });
-	},
-	my(){
-		this.$router.push({ path: "my" });
-	},
-	search(){
-		this.$router.push({ path: "search" });
-	},
-	hotcomments(){
-		this.$router.push({ path: "HotComments" });
-	}
+      this.$router.push({ path: "/rec" });
+    },
+    my() {
+      this.$router.push({ path: "my" });
+    },
+    search() {
+      this.$router.push({ path: "search" });
+    },
+    hotcomments() {
+      this.$router.push({ path: "HotComments" });
+    }
   }
 };
 </script>

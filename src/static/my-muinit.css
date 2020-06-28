@@ -1,7 +1,7 @@
 .mint-header {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     background-color: rgb(198, 47, 47);
     box-sizing: border-box;
     color: #fff;
@@ -16,4 +16,16 @@
     text-align: center;
     white-space: nowrap;
 }
-* { touch-action: none; }
+
+* {
+    touch-action: none;
+}
+
+.mint-swipe {
+    height: 160px;
+    width: 95%;
+    margin:10px auto;
+    border-radius: 10px;
+}
+
+
