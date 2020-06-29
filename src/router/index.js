@@ -8,44 +8,48 @@ import rec from '@/components/tabbar/Recommendsonglist'
 
 import search from '@/components/tabbar/Search'
 
+import playlist from '@/page/playList'
 
-
-const routes= [
-    {
+const routes = [{
         path: '/',
-        component:rec
+        component: rec
     },
     {
         path: '/rec',
         component: rec,
-        name:"rec"
+        name: "rec"
     },
     {
         path: '/search',
         component: search,
-        name:"search"
+        name: "search"
     },
     {
         path: '/hotcomments',
-        component:HotComments,
-        name:"HotComments"
+        component: HotComments,
+        name: "HotComments"
     },
     {
         path: '/my',
-        component:My,
-        name:"My"
+        component: My,
+        name: "My"
+    },
+    {
+        path: '/playlist/:id',
+        component: playlist,
+        name: "playlist"
     }
 ]
 
 const router = new VueRouter({
-    mode:'history',
+    mode: 'history',
     routes,
     linkActiveClass: "mui-active"
 })
 
 const originalPush = VueRouter.prototype.push
-   VueRouter.prototype.push = function push(location) {
-   return originalPush.call(this, location).catch(err => err)
+VueRouter.prototype.push = function push(location) {
+    return originalPush.call(this, location).catch(err => err)
 }
 
 export default router

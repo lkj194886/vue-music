@@ -25,8 +25,7 @@ export default {
   data() {
     return {
       bannerList: [],
-      PlayList: [],
-      playlist: 0
+      PlayList: []
     };
   },
   created() {
@@ -37,7 +36,6 @@ export default {
     getBrannerList() {
       this.$axios.get("/banner").then(res => {
         if (res.data.code == 200) {
-          console.log(res.data);
           this.bannerList = res.data.banners;
         }
       });
@@ -45,13 +43,18 @@ export default {
     getPlayList() {
       this.$axios.get("/personalized", { params: { limit: 12 } }).then(res => {
         if (res.data.code == 200) {
-          console.log(res.data);
           this.PlayList = res.data.result;
         }
       });
     },
     playdetails(id) {
       console.log(id);
+      this.$router.push({
+        name: "playlist",
+        params:{
+          playid:id
+        }
+      });
     }
   }
 };
