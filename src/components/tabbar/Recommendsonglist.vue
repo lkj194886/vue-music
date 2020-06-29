@@ -13,7 +13,7 @@
           <div>
             <img :src="play.picUrl" />
           </div>
-          <div>{{play.name}}</div>
+          <div class="playname">{{play.name}}</div>
         </div>
       </div>
     </div>
@@ -55,10 +55,10 @@ export default {
 
 
 <style>
-#rec{
-    
-    height: auto;
-    width: auto;
+#rec {
+  height: auto;
+  width: auto;
+  margin: 0 auto;
 }
 .banners {
   width: 100%;
@@ -89,18 +89,23 @@ export default {
 .grid > div {
   color: #000;
   line-height: 2;
-  text-align: center;
-  word-break: break-all;
-}
-.grid > div > div {
   margin: 0 auto;
-  width: 120px;
-  font-size: 13px;
+  width: 100px;
+}
+.playname {
+  text-align: center;
+  width: 110px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+  font-size: 12px;
 }
 .grid > div > div > img {
- 
   height: 100px;
   border-radius: 15%;
 }
-
+.grid > div:hover {
+  opacity: 0.7;
+}
 </style>

@@ -64,5 +64,8 @@ export default {
 .v-leave-active{
 	transition: all 0.5s;
 }
-
+*{
+	margin: 0 auto;
+	height: 0 auto;
+}
 </style>
