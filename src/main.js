@@ -20,12 +20,10 @@ Vue.use(Mint);
 
 //配置全局请求路径
 import axios from "axios"
-axios.defaults.baseURL = "http://weigg.top:3000/"; // 关键步骤–填写后台请求统一的地址
-axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+axios.defaults.headers.post["Content-type"]="application/json";
+axios.defaults.baseURL ="http://weigg.top:3000"
+Vue.prototype.$axios=axios;
 Vue.config.productionTip = false;
-Vue.prototype.$addr = axios;
-
-Vue.config.productionTip = false
 
 new Vue({
   router,

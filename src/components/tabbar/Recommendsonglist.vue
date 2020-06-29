@@ -9,7 +9,7 @@
 
     <div class="square">
       <div class="square-inner grid">
-        <div v-for="play in PlayList" :key="play.id">
+        <div v-for="play in PlayList" :key="play.id" @click="playdetails(play.id)">
           <div>
             <img :src="play.picUrl" />
           </div>
@@ -25,7 +25,8 @@ export default {
   data() {
     return {
       bannerList: [],
-      PlayList: []
+      PlayList: [],
+      playlist: 0
     };
   },
   created() {
@@ -34,7 +35,7 @@ export default {
   },
   methods: {
     getBrannerList() {
-      this.$addr.get("/banner").then(res => {
+      this.$axios.get("/banner").then(res => {
         if (res.data.code == 200) {
           console.log(res.data);
           this.bannerList = res.data.banners;
@@ -42,12 +43,15 @@ export default {
       });
     },
     getPlayList() {
-      this.$addr.get("/personalized", { params: { limit: 18 } }).then(res => {
+      this.$axios.get("/personalized", { params: { limit: 12 } }).then(res => {
         if (res.data.code == 200) {
           console.log(res.data);
           this.PlayList = res.data.result;
         }
       });
+    },
+    playdetails(id) {
+      console.log(id);
     }
   }
 };
