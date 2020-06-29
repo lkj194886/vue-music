@@ -17,6 +17,11 @@ import './static/mui/css/mui.min.css'
 import mui from './static/mui/js/mui.js'
 Vue.prototype.mui = mui
 Vue.use(Mint);
+import vueAplayer from 'vue-aplayer'
+ 
+Vue.use(vueAplayer)
+
+
 
 //配置全局请求路径
 import axios from "axios"
@@ -24,6 +29,7 @@ axios.defaults.headers.post["Content-type"]="application/json";
 axios.defaults.baseURL ="http://weigg.top:3000"
 Vue.prototype.$axios=axios;
 Vue.config.productionTip = false;
+
 
 new Vue({
   router,

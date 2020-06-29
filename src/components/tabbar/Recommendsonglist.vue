@@ -21,11 +21,12 @@
 </template>
 
 <script>
+import global from'@/components/global'
 export default {
   data() {
     return {
       bannerList: [],
-      PlayList: []
+      PlayList: [],
     };
   },
   created() {
@@ -49,6 +50,7 @@ export default {
     },
     playdetails(id) {
       console.log(id);
+      global.setmusicid(Number(id))
       this.$router.push({
         name: "playlist",
         params:{
