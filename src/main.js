@@ -26,7 +26,7 @@ Vue.use(vueAplayer)
 //配置全局请求路径
 import axios from "axios"
 axios.defaults.headers.post["Content-type"]="application/json";
-axios.defaults.baseURL ="http://localhost:3000"
+axios.defaults.baseURL ="http://101.132.130.125:3000"
 Vue.prototype.$axios=axios;
 Vue.config.productionTip = false;
 
