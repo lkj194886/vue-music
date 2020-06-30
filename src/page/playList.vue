@@ -87,20 +87,21 @@ export default {
   height: 100%;
 }
 .songimg {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   margin-left: 10px;
   margin-top: 10px;
   border-radius: 5%;
 }
 #synopsisimg {
   float: left;
+  width: 150px;
 }
 #synopsis {
-  width: 200px;
-  height: 180px;
+  width: 180px;
+  height: 150px;
   float: left;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: 10px;
 }
 .userimg {
@@ -118,15 +119,15 @@ export default {
 }
 .tags {
   position: relative;
-  top: 50px;
+  top: 40px;
   background-color: #000;
   color: #fff;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 13px;
   opacity: 0.7;
   padding: 2px;
   margin: 3px;
-  left: -40px;
+  left: -30px;
 }
 .abstract {
   margin-top: 10px;
