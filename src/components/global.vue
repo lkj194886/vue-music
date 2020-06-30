@@ -1,5 +1,5 @@
 <script>    
-    //线上接口地址
+  //歌单ID,应该没用到这个
     export default{
         musicid:0,
         setmusicid (musicid) {
