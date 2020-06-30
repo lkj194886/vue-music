@@ -22,7 +22,7 @@
     <div class="list-song">
       <h3>歌曲列表</h3>
       <div v-for="item in songlist" :key="item.al.id">
-        <a href="javascript: void(0)" class="song" @click="play(item.id)">
+        <a class="song" @click="play(item.id,item.name,item.ar[0].name,item.al.picUrl)">
           <div class="song-wrapper">
             <div class="song-info">
               <div class="song-title">
@@ -31,7 +31,7 @@
               </div>
               <div class="song-detail">
                 <i class="sq"></i>
-                {{ item.ar.name }} - {{ item.al.name}}
+                {{ item.ar[0].name }} - {{ item.al.name}}
               </div>
             </div>
             <div class="song-play">
@@ -45,17 +45,15 @@
 </template>
 
 <script>
-import global from "@/components/global";
+import Bus from '@/api/Bus'
 export default {
-  props: ["show"],
   data() {
     return {
       id: this.$route.params.playid,
       songlist: [],
       song: null,
       playlist: {},
-      user: {},
-      music: Object
+      user: {}
     };
   },
   created() {
@@ -74,13 +72,11 @@ export default {
           this.user = res.data.playlist.creator;
         });
     },
-    play(id) {
-      global.setmusicid(Number(id));
-      console.log(global.musicid);
-      this.$router.push({
-        name: "play",
-        params: {musicid: global.musicid}
-      });
+    play(playid,arname,alname,alimg) {
+      this.$axios.get('/song/url',{params:{id:playid}}).then(res=>{
+        Bus.$emit('playurl',res.data.data,"true",arname,alname,alimg)
+      })
+  
     }
   }
 };

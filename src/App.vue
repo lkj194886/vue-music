@@ -28,13 +28,12 @@
           <span class="mui-tab-label">我的</span>
         </a>
       </nav>
-      <play v-if="show" ></play>
-      
+      <play id="play"></play>
     </div>
   </keep-alive>
 </template>
 <script>
-import play from "@/page/play";
+import play from'@/page/play'
 export default {
   components: {
     play
