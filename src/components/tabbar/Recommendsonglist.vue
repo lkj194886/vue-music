@@ -42,7 +42,7 @@ export default {
       });
     },
     getPlayList() {
-      this.$axios.get("/personalized", { params: { limit: 12 } }).then(res => {
+      this.$axios.get("/personalized", { params: { limit: 18 } }).then(res => {
         if (res.data.code == 200) {
           this.PlayList = res.data.result;
         }
