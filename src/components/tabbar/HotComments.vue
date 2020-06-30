@@ -8,7 +8,7 @@
 export default {
     data() {
         return {
-            msg:"暂未开放"
+            msg:"暂未开放!"
         }
     },
 }
