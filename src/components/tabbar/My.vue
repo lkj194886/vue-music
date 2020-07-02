@@ -1,6 +1,6 @@
 <template>
     <div id="my">
-        {{msg}}
+       <h4><a href="https://gitee.com/ljwzuishuai/vue-music">码云地址</a></h4>
     </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
     data() {
         return {
-            msg:"暂未开放"
+            msg:"https://gitee.com/ljwzuishuai/vue-music"
         }
     },
 }

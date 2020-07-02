@@ -9,9 +9,12 @@
     "dev": "vue-cli-service serve"
   },
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "core-js": "^3.6.5",
     "jquery": "^3.5.1",
     "mint-ui": "^2.2.13",
+    "popper.js": "^1.16.1",
+    "save-dev": "0.0.1-security",
     "vue": "^2.6.11",
     "vue-aplayer": "^1.6.1",
     "vue-router": "^3.2.0",

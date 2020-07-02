@@ -2,6 +2,7 @@
   <keep-alive>
     <div id="app" class="app-header">
       <mt-header class="header" fixed title="Vue网易云音乐"></mt-header>
+       
       <div class="container" @click="go()">
         <a>
           <span class="mui-icon mui-icon-arrowthinleft"></span>
@@ -25,10 +26,11 @@
         </a>
         <a class="mui-tab-item" @click="my">
           <span class="mui-icon mui-icon-contact mui-icon-icon-contact-filled"></span>
-          <span class="mui-tab-label">我的</span>
+          <span class="mui-tab-label">码云</span>
         </a>
       </nav>
-      <play id="play"></play>
+      <play id="play">
+      </play>
     </div>
   </keep-alive>
 </template>
