@@ -14,5 +14,14 @@
 
 ### npm install 
 ### npm run serve
+## 项目效果图
+
+
+### 首页
+![QQ图片20200702134328](F:\案例\Vue\vue-muusic\src\assets\QQ图片20200702134328.png)
+### 搜索
+![QQ图片20200702134337](F:\案例\Vue\vue-muusic\src\assets\QQ图片20200702134337.png)
+### 热评
+![QQ图片20200702134340](F:\案例\Vue\vue-muusic\src\assets\QQ图片20200702134340.png)
 
 ## 该项目仅用于学习
