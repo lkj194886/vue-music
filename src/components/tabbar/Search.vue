@@ -1,5 +1,7 @@
 <template>
+<keep-alive>
   <div id="search">
+    
     <div class="d5">
       <input type="text" placeholder="输入 (歌手 歌曲) 搜索" v-model="value" />
       <a @click="search()">
@@ -28,7 +30,9 @@
         </a>
       </div>
     </div>
+    
   </div>
+  </keep-alive>
 </template>
 
 <script>

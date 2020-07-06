@@ -8,8 +8,8 @@
           <span class="mui-icon mui-icon-arrowthinleft"></span>
         </a>
       </div>
-      <transition>
-        <router-view></router-view>
+      <transition>    
+        <router-view></router-view>    
       </transition>
       <nav class="mui-bar mui-bar-tab">
         <a class="mui-tab-item mui-active" @click="rec">

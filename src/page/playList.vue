@@ -14,7 +14,6 @@
         </span>
       </div>
     </div>
-
     <div class="abstract">
       <h4>简介:</h4>
       <p>{{playlist.description}}</p>
