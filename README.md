@@ -12,7 +12,7 @@
 
 
 
-### git clone https://gitee.com/ljwzuishuai/vue-music.git
+### https://github.com/lkj194886/vue-music.git
 
 ### npm install 
 ### npm run serve
