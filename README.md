@@ -20,11 +20,17 @@
 
 #### 启动报错(重新再启动一次)
 ### 首页
-![QQ图片20200702134328](F:\案例\Vue\vue-muusic\src\assets\QQ图片20200702134328.png)
+<img src="http://weigg.top:5560/upload/%E9%A6%96%E9%A1%B5.jpg" alt="img" style="zoom:50%;" />
+
 ### 搜索
-![QQ图片20200702134337](F:\案例\Vue\vue-muusic\src\assets\QQ图片20200702134337.png)
+<img src="http://weigg.top:5560/upload/%E6%90%9C%E7%B4%A2.jpg" alt="img" style="zoom: 50%;" />
+
 ### 热评
-![QQ图片20200702134340](F:\案例\Vue\vue-muusic\src\assets\QQ图片20200702134340.png)
+<img src="http://weigg.top:5560/upload/%E7%83%AD%E8%AF%84.jpg" alt="img" style="zoom:50%;" />
+
+### 播放
+
+<img src="http://weigg.top:5560/upload/%E6%92%AD%E6%94%BE.jpg" alt="img" style="zoom:50%;" />
 
 ## 该项目仅用于学习
 
